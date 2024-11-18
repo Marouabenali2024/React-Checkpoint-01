@@ -1,38 +1,50 @@
+/* Centering the card */
 .App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
   text-align: center;
+  background-color: green; /* Optional: You can change the background color */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Card frame styling */
+.App-card {
+  background: rgb(0, 204, 78); /* Green background */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px; /* Card width */
+  width: 100%; /* Ensure the card is responsive */
+  padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
+/* Resizing and centering the image */
+.App-logo {
+  width: 100%; /* Make image responsive */
+  max-width: 200px; /* Set a maximum size */
+  height: auto;
+  object-fit: contain; /* Ensures the image maintains its aspect ratio */
+}
+
+/* Header Styling */
+.App-header {
+  color: #0053fa; /* Blue color */
+  font-size: 20px;
+  margin: 20px 0;
+}
+
+/* Link Styling */
 .App-link {
   color: #61dafb;
+  text-decoration: none;
+  font-size: 18px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App-product{
+    color: #61dafb;
+  text-decoration: none;
+  font-size: 18px;
 }
